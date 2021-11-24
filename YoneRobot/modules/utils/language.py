@@ -21,9 +21,8 @@ import os
 import yaml
 from babel.core import Locale
 
-from hitsuki.services.mongo import db
-from hitsuki.services.redis import redis
-from hitsuki.utils.logger import log
+from YoneRobot.services.mongo import db
+from YoneRobot.utils.logger import log
 
 LANGUAGES = {}
 
@@ -31,7 +30,7 @@ log.info("Loading localizations...")
 
 for filename in os.listdir('hitsuki/localization'):
     log.debug('Loading language file ' + filename)
-    with open('hitsuki/localization/' + filename, "r", encoding='utf8') as f:
+    with open('YoneRobot/localization/' + filename, "r", encoding='utf8') as f:
         lang = yaml.load(f, Loader=yaml.CLoader)
 
         lang_code = lang['language_info']['code']
