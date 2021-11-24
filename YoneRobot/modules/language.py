@@ -22,8 +22,8 @@ from aiogram.types.inline_keyboard import InlineKeyboardMarkup, InlineKeyboardBu
 from aiogram.utils.callback_data import CallbackData
 from aiogram.utils.exceptions import MessageNotModified
 
-from hitsuki.decorator import register
-from hitsuki.services.mongo import db
+from YoneRobot.decorator import register
+from YoneRobot.services.mongo import db
 from .utils.language import LANGUAGES, get_strings_dec, change_chat_lang, get_chat_lang_info, get_strings
 from .utils.message import get_arg
 
